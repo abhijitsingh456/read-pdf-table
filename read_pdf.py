@@ -11,6 +11,6 @@ if os.path.exists(file_path):
     df_csv_append = pd.DataFrame()
     for df in dfs:
         df_csv_append = pd.concat([df_csv_append, df], ignore_index=False)
-    df_csv_append.to_csv(r'C:\Users\709412\Downloads\file3.csv')
+    df_csv_append.to_csv(os.getcwd() + "\\file.csv")
 else:
     print('The specified file does NOT exist')
